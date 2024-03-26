@@ -10,16 +10,59 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- UI & tailwind -->
-
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.8.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 
 <body>
 
     <main>
+
+        <ul>
+
+            <!-- list -1 -->
+
+            <li>
+                <span class="folder">HTML</span>
+                <ul class="nested">
+                    <li class="file-html">index.html</li>
+                    <li class="file-html">services.html</li>
+                    <!-- nested li -->
+                    <li>
+                        <span class="folder">HTML</span>
+                        <ul class="nested">
+                            <li class="file-html">index.html</li>
+                            <li class="file-html">services.html</li>
+                            <!-- nested li -->
+                            <li>
+                                <span class="folder">Images</span>
+                                <ul class="nested">
+                                    <li class="img">user.jpg</li>
+                                    <li class="img">profile.pmg</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="folder">Images</span>
+                        <ul class="nested">
+                            <li class="img">user.jpg</li>
+                            <li class="img">profile.pmg</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- list 2 -->
+
+            <li>
+                <span id="a" class="folder">CSS</span>
+                <ul class="nested">
+                    <li class="file-css">style.css</li>
+                    <li class="file-css">services.css</li>
+                </ul>
+            </li>
+        </ul>
+
+
 
     </main>
 
