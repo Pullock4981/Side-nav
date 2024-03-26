@@ -26,7 +26,7 @@ li.file-html::before,
 li.file-css::before,
 li.img::before {
     display: inline-block;
-    margin-right: 0.4rem;
+    margin-right: 0.3rem;
 }
 
 ul span.folder::before {
@@ -59,7 +59,7 @@ ul.nested{
 ul.nested::before{
     position: absolute;
     content: "";
-    left: 2%;
+    left: 1.1%;
     width: 1.5rem;
     height: 100%;
     border-left: 1px solid #000;
