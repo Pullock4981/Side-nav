@@ -13,63 +13,89 @@
 </head>
 
 <body>
+    <ul class="tree">
+        <li>
+            <details>
+                <summary>First</summary>
 
-    <main>
-
-        <ul>
-
-            <!-- list -1 -->
-
-            <li>
-                <span class="folder">HTML</span>
-                <ul class="nested">
-                    <li class="file-html">index.html</li>
-                    <li class="file-html">services.html</li>
-                    <!-- nested li -->
+                <ul>
+                    <li>First</li>
                     <li>
-                        <span class="folder">HTML</span>
-                        <ul class="nested">
-                            <li class="file-html">index.html</li>
-                            <li class="file-html">services.html</li>
-                            <!-- nested li -->
-                            <li>
-                                <span class="folder">Images</span>
-                                <ul class="nested">
-                                    <li class="img">user.jpg</li>
-                                    <li class="img">profile.pmg</li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <details>
+                            <summary>Second</summary>
+                            <ul>
+                                <li>First</li>
+                                <li>Second</li>
+                                <li>Another</li>
+                            </ul>
+                        </details>
+
                     </li>
+                    <li>Another</li>
+                </ul>
+        </li>
+        </details>
+
+        <li>
+            <details>
+                <summary> Second</summary>
+                <ul>
+                    <li>First</li>
                     <li>
-                        <span class="folder">Images</span>
-                        <ul class="nested">
-                            <li class="img">user.jpg</li>
-                            <li class="img">profile.pmg</li>
-                        </ul>
+                        <details>
+                            <summary>Second</summary>
+                            <ul>
+                                <li>First</li>
+                                <li>Second</li>
+                                <li>Another</li>
+                            </ul>
+                        </details>
+
+
                     </li>
+                    <li>Another</li>
                 </ul>
-            </li>
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary>Another</summary>
+        <li>
 
-            <!-- list 2 -->
+            <ul>
+                <li>First</li>
+                <li>
+                    <details>
+                        <summary>Second</summary>
+                        <ul>
+                            <li>First</li>
+                            <li>Second</li>
+                            <li>Another</li>
+                        </ul>
+                    </details>
 
-            <li>
-                <span id="a" class="folder">CSS</span>
-                <ul class="nested">
-                    <li class="file-css">style.css</li>
-                    <li class="file-css">services.css</li>
-                </ul>
-            </li>
-        </ul>
 
+                </li>
+                <li>Another</li>
+            </ul>
+        </li>
+        </details>
+        </li>
+        <li>
+            <details>
+                <summary>More</summary>
+            </details>
+        </li>
+    </ul>
 
-
-    </main>
-
-    <!-- scrips file -->
-
-    <script src="sidenav.js"></script>
-
+    <details>
+        <summary>Clickable Title</summary>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis debitis, reiciendis beatae eaque itaque
+            consectetur sapiente ratione. Rerum sit ut perspiciatis nulla alias officiis vitae perferendis itaque
+            accusantium laudantium.
+        </p>
+    </details>
 </body>
 
 </html>

@@ -1,76 +1,51 @@
-* {
-    margin-left: 10px;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sens-serif;
-}
+:root {}
 
-body {
-    min-height: 100vh;
-}
+
 
 ul {
-    /* color: aqua; */
-    list-style-type: none;
+    list-style: none;
+    line-height: 2em;
 }
 
-ul span.folder {
-    text-transform: capitalize;
+.tree summary {
     cursor: pointer;
-    font-weight: 900;
-    font-size: 1.3rem;
 }
 
-ul span.folder::before,
-li.file-html::before,
-li.file-css::before,
-li.img::before {
-    display: inline-block;
-    margin-right: 0.3rem;
+.tree summary::marker {
+    display: none;
 }
 
-ul span.folder::before {
-    content: '\1F5C0';
+
+.tree summary::-webkit-details-marker {
+    display: none;
 }
 
-li.file-html::before {
-    content: '\1F5B9';
-}
-
-li.img::before {
-    content: '\1F5BA';
-}
-
-li.file-css::before {
-    content: '\1F5CB';
-}
-
-ul.nested li {
-    position: relative;
-    padding-left: 2rem;
-    font-weight: 500;
-    font-size: 1.1rem;
-}
-
-ul.nested{
+ul li {
     position: relative;
 }
 
-ul.nested::before{
+ul li::before {
     position: absolute;
+    left: -10px;
+    top: 0;
+    border-left: 2px solid gray;
+    /* border-left: 2px solid red; */
+    border-bottom: 2px solid gray;
     content: "";
-    left: 1.1%;
-    width: 1.5rem;
+    width: 8px;
+    height: 1em;
+}
+
+ul li::after {
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    border-left: 2px solid gray;
+    content: "";
+    width: 8px;
     height: 100%;
-    border-left: 1px solid #000;
 }
 
-ul.nested li::after{
-    position: absolute;
-    content: "";
-    left: 0.7%;
-    top: .04rem;
-    width: 1.5rem;
-    height: 1rem;
-    border-bottom: 1px solid #000;
+ul li:last-child::after{
+    display: none;
 }
